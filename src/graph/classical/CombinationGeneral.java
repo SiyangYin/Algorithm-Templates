@@ -35,6 +35,7 @@ public class CombinationGeneral {
             res.add(new ArrayList<>(list));
             return;
         }
+
         for (int i = start; i < A.length; i++) {
             if (i > start && A[i] == A[i - 1] && available[i - 1] > 0) {
                 continue;
