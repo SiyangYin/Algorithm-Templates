@@ -11,14 +11,10 @@ public class GraphBFS_Revised {
         Node n4 = new Node(5);
         Node n5 = new Node(6);
         Node n6 = new Node(7);
-        
+
         n0.neighbors.addAll(Arrays.asList(n1, n2, n3));
         n1.neighbors.addAll(Arrays.asList(n0, n3, n5));
-        n2.neighbors.addAll(Arrays.asList(n0));
-        n3.neighbors.addAll(Arrays.asList(n0, n1));
-        n4.neighbors.addAll(Arrays.asList(n5));
-        n5.neighbors.addAll(Arrays.asList(n6, n4, n1));
-        n6.neighbors.addAll(Arrays.asList(n5));
+        n5.neighbors.addAll(Arrays.asList(n6, n4));
 
         List<Integer> list = new ArrayList<>();
         bfs(n0, list);
