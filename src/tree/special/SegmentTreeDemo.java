@@ -7,7 +7,7 @@ public class SegmentTreeDemo {
     public static void main(String[] args) {
         int[] A = {4, 3, 5, 2};
         SegTree segTree = new SegTree(A);
-        
+        System.out.println(segTree);
         segTree.add(1, 3, 2);
         System.out.println(segTree);
         
